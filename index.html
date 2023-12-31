@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Import Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Import Products</h1>
+  <div class="sections">
+    <div class="section-wrapper">
+      <section class="section1">
+        <h2>Step 1: Select File</h2>
+        <input type="file" id="fileInput">
+        <p class="supported-types">Supported File Types: .CSV, .JSON</p>
+      </section>
+      <section class="section2">
+        <h2>Step 2: Specify Format</h2>
+        <div class="yui">
+            <label for="fileType">File Type:</label>
+            <select id="fileType">
+            <option value="csv">CSV</option>
+            </select>
+            <label for="characterEncoding">Character Encoding:</label>
+            <select id="characterEncoding">
+            <option value="utf-8">UTF-8</option>
+            </select>
+            <label for="delimiter">Delimiter:</label>
+            <select id="delimiter">
+            <option value=",">Comma</option>
+            </select>
+            <label for="hasHeader">Has Header:</label>
+            <input type="checkbox" id="hasHeader">
+        </div>  
+      </section>
+    </div>
+    <section class="section3">
+      <h2>Step 3: Display Handling</h2>
+      <div class="pui">
+        <h3>Select the fields to be displayed</h3>
+        <div class="field-lists">
+            <div class="available-fields">
+            <h4>Available Fields</h4>
+            <select id="availableFields" multiple>
+            </select>
+            </div>
+            <div class="buttons">
+            <button id="moveRight">>></button>
+            <button id="moveLeft"><<</button>
+            </div>
+            <div class="fields-to-display">
+            <h4>Fields to be Displayed</h4>
+            <select id="fieldsToDisplay" multiple>
+            </select>
+            </div>
+        </div>
+    </div>
+    </section>
+  </div>
+  <div id="displayTableSection">
+    <!-- The generated table will be placed here -->
+  </div>
+  <div class="button-wrapper">
+    <button class="hui" id="nextButton">Next</button>
+    <button class="hui" id="cancelButton">Cancel</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

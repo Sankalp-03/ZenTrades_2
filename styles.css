@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 40px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="file"],
+  select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #cancelButton
+  {
+    background-color: ghostwhite;
+    color: red;
+  }
+  .sections {
+    display: inline;
+    /* flex-wrap:wrap; */
+    /* justify-content: space-between; */
+  }
+  
+  .section-wrapper {
+    display: flex;
+    justify-content: space-between; /* Align sections with space between */
+    margin-bottom: 20px;
+  }
+  
+  .section1,
+  .section2 {
+    width: calc(50% - 10px); /* Adjust width and create space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Add space between sections */
+  }
+  .section2
+  {
+    margin-left: 10px;
+  }
+  .section3 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add space between section 3 and buttons */
+  }
+  .yui{
+    padding-left: 90px;
+  }
+  .fileType{
+    display: block;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px; /* Add margin above the buttons */
+  }
+  
+  .hui {
+    display: flex; /* Make buttons align horizontally */
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+  .field-lists{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .pui{
+    padding-left: 85px;
+  }
+  #availableFields{
+    width: 100%;
+  }
+  #fieldsToDisplay{
+    width: 70%;
+  }
